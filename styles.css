@@ -770,7 +770,7 @@ section {
 
 .idol-image {
     position: relative;
-    height: 200px;
+    height: 220px;
     overflow: hidden;
 }
 
@@ -843,6 +843,70 @@ section {
     display: flex;
     align-items: center;
     gap: var(--space-xs);
+}
+.idol-card {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.4s ease, transform 0.4s ease;
+}
+
+.idol-card.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.idol-card.hide {
+  opacity: 0;
+  transform: translateY(20px);
+}
+.load-more-wrapper {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.load-more-btn {
+  padding: 0.75rem 1.5rem;
+  background: var(--primary-saffron);
+  color: white;
+  border: none;
+  border-radius: var(--radius-md);
+  font-weight: 600;
+  font-size: var(--text-base);
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.load-more-btn:hover {
+  background: #ff8000;
+  transform: translateY(-2px);
+}
+
+.idol-card.fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.4s ease, transform 0.4s ease;
+}
+
+.idol-card.fade-in.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.load-more-btn {
+    padding: 0.75rem 1.5rem;
+    background: var(--primary-saffron);
+    color: white;
+    border: none;
+    border-radius: var(--radius-md);
+    font-weight: 600;
+    font-size: var(--text-base);
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.load-more-btn:hover {
+    background: #ff8000;
+    transform: translateY(-2px);
 }
 
 /* Gallery Section - Redesigned */
