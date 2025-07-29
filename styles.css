@@ -1088,7 +1088,12 @@ section {
     justify-content: center;
     box-shadow: var(--shadow-md);
 }
-
+.upi{
+    margin: 0 auto var(--space-md);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 .qr-placeholder {
     text-align: center;
     color: var(--bg-primary);
