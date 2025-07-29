@@ -239,7 +239,7 @@ function initSmoothScrolling() {
             let targetSection = '';
             const buttonText = this.textContent.toLowerCase();
             if (buttonText.includes('join') || buttonText.includes('celebration')) targetSection = '#celebrations';
-            else if (buttonText.includes('donate')) targetSection = '#contact';
+            else if (buttonText.includes('donate now')) targetSection = '#contact';
             if (targetSection) {
                 const targetElement = document.querySelector(targetSection);
                 if (targetElement) {
